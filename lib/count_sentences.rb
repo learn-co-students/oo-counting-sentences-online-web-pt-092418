@@ -28,12 +28,17 @@ class String
 
   def count_sentences
     counted_arr = self.split
-    if counted_arr.count == 0 
-      0
-    else 
-      counted_arr.count
-    end 
-    # complex_string = String.new 
-    # comlex_string.self 
+      if counted_arr.count == 0 
+       0
+      else 
+        counted_arr.count
+      end 
+    # complex_string = []
+  #   counted_arr.each do |sentence|
+  #     # complex_string.self 
+  #   counted_arr << sentence unless counted_arr.include?(sentence)
+  #   end 
+  #   counted_ar
+  # end
   end 
 end
