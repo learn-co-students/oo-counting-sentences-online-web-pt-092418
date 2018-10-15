@@ -26,12 +26,14 @@ class String
     end 
   end
 
-  def count_sentences(arr)
-    arr = self.split
-    if arr.count == 0 
-      puts "zero" 
+  def count_sentences
+    counted_arr = self.split
+    if counted_arr.count == 0 
+      0
     else 
-      arr.count  
-    end
+      counted_arr.count
+    end 
+    # complex_string = String.new 
+    # comlex_string.self 
   end 
 end
