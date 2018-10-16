@@ -32,13 +32,7 @@ class String
        0
       else 
         counted_arr.count
-      end 
-    # complex_string = []
-  #   counted_arr.each do |sentence|
-  #     # complex_string.self 
-  #   counted_arr << sentence unless counted_arr.include?(sentence)
-  #   end 
-  #   counted_ar
-  # end
+      end
+      self.split(/[.!?]/).reject {|x| x.empty?}.size  #splits on all punctuation using regex and removes split criteria. Then counts remaining sentences. 
   end 
 end
