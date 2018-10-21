@@ -1,6 +1,11 @@
+require 'pry'
 class String
-
   def sentence?
+    # if self.end_with?(".")
+    #   true
+    # else
+    #   false
+    # end
     self.end_with?(".") ? true : false
   end
 
@@ -13,6 +18,6 @@ class String
   end
 
   def count_sentences
-    self.split(/[.!?]/).reject {|x| x.empty?}.size
+    self.scan(/[^\.!?]+[\.!?]/).map(&:strip).count
   end
 end
